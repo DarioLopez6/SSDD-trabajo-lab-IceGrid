@@ -49,4 +49,5 @@ Notas
   detecte la aplicación.
 - El make stop puede tardar alrededor de 1 minuto en cerrar completamente los nodos, de todas formas se podra seguir usando en la misma 
   sesion hasta que los nodos se cierren.
-
+-Las primeras veces que se use make nodes, puede no funcionar a la perfección porque los nodos tardan un segundo en abrirse
+(recomendamos volver a cerrarlos con make stop y abrirlos con make nodes de nuevo).
