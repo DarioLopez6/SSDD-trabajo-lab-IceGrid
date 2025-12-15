@@ -41,7 +41,8 @@ Ejecuta:
 
 Esto hará lo siguiente:
 - Sincroniza el cliente con el servidor IcePatch2 usando la IP y puerto configurados (`SERVER_IP` y `SERVER_PORT`).  
-- Inicia los nodos del cliente en tmux, igual que en el servidor.  
+- Inicia los nodos del cliente en tmux, igual que en el servidor
+- Es posible que IcePatch2 solicite autorización para usar el directorio de destino. Confirme escribiendo `yes`.
 
 ### Abrir MediaControl GUI
 Ejecuta dentro de la sesión tmux:
