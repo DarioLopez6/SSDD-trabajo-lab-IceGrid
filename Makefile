@@ -13,7 +13,7 @@ nodes-Server:
 # Inicia los nodos del cliente
 nodes-Client:
 	@echo "Sincronizando con IcePatch2 Server..."
-	@icepatch2cliet --IcePatch2.Proxy=IcePatch2:tcp -h $(SERVER_IP) -p $(SERVER_PORT) --sync
+	@icepatch2client --IcePatch2.Proxy=IcePatch2:tcp -h $(SERVER_IP) -p $(SERVER_PORT) --sync
 	@echo "Iniciando nodos del cliente en tmux..."
 	@bash $(RUN_SCRIPT) nodes
 
