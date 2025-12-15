@@ -9,7 +9,7 @@ import Ice
 
 from gst_player import GstPlayer
 
-Ice.loadSlice('-I{} IcePatch2/spotifice_v2.ice'.format(Ice.getSliceDir()))
+Ice.loadSlice('-I{} spotifice_v2.ice'.format(Ice.getSliceDir()))
 import Spotifice  # type: ignore # noqa: E402
 
 logging.basicConfig(level=logging.INFO)

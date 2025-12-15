@@ -41,8 +41,7 @@ Ejecuta:
 
 Esto hará lo siguiente:
 - Sincroniza el cliente con el servidor IcePatch2 usando la IP y puerto configurados (`SERVER_IP` y `SERVER_PORT`).  
-- Inicia los nodos del cliente en tmux, igual que en el servidor
-- Es posible que IcePatch2 solicite autorización para usar el directorio de destino. Confirme escribiendo `yes`.
+- Inicia los nodos del cliente en tmux, igual que en el servidor.  
 
 ### Abrir MediaControl GUI
 Ejecuta dentro de la sesión tmux:
@@ -90,6 +89,7 @@ Arranque rápido entre ordenadores
 
 2. Cliente
    - Sincronizar con el servidor y arrancar nodos con:
+       icepatch2client --IcePatch2Client.Proxy="Spotifice.IcePatch2/server:tcp -h <IP> -p 10002" .
        make nodes-Client
 
 3. Abrir MediaControl GUI (igual para servidor o cliente)

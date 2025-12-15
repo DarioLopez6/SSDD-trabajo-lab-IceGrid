@@ -12,7 +12,7 @@ from gi.repository import Gtk, GLib
 
 import Ice
 
-Ice.loadSlice('-I{} IcePatch2/spotifice_v1.ice'.format(Ice.getSliceDir()))
+Ice.loadSlice('-I{} spotifice_v1.ice'.format(Ice.getSliceDir()))
 import Spotifice  # type: ignore # noqa: E402
 
 try:

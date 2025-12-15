@@ -15,7 +15,7 @@ nodes-Client:
 	@echo "Sincronizando con IcePatch2 Server..."
 	@icepatch2cliet --IcePatch2.Proxy=IcePatch2:tcp -h $(SERVER_IP) -p $(SERVER_PORT) --sync
 	@echo "Iniciando nodos del cliente en tmux..."
-	@bash $(RUN_SCRIPT)
+	@bash $(RUN_SCRIPT) nodes
 
 # Abre el panel de media control GUI
 gui:

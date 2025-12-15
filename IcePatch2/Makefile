@@ -13,9 +13,9 @@ nodes-Server:
 # Inicia los nodos del cliente
 nodes-Client:
 	@echo "Sincronizando con IcePatch2 Server..."
-	@icepatch2cliet --IcePatch2.Proxy=IcePatch2:tcp -h $(SERVER_IP) -p $(SERVER_PORT) --sync
+	@icepatch2client --IcePatch2Client.Proxy="Spotifice.IcePatch2/server:tcp -h 192.168.1.137 -p 10002" .
 	@echo "Iniciando nodos del cliente en tmux..."
-	@bash $(RUN_SCRIPT)
+	@bash $(RUN_SCRIPT) nodes
 
 # Abre el panel de media control GUI
 gui:

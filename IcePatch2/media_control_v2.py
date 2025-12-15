@@ -11,7 +11,7 @@ from gi.repository import Gtk
 
 import Ice
 
-Ice.loadSlice('-I{} IcePatch2/spotifice_v2.ice'.format(Ice.getSliceDir()))
+Ice.loadSlice('-I{} spotifice_v2.ice'.format(Ice.getSliceDir()))
 import Spotifice
 
 from media_control_v1 import (

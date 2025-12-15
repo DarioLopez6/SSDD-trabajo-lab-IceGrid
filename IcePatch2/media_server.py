@@ -14,7 +14,7 @@ from typing import Dict, Optional
 
 import Ice
 
-Ice.loadSlice('-I{} IcePatch2/spotifice_v2.ice'.format(Ice.getSliceDir()))
+Ice.loadSlice('-I{} spotifice_v2.ice'.format(Ice.getSliceDir()))
 import Spotifice  # type: ignore # noqa: E402
 
 logging.basicConfig(level=logging.INFO)
@@ -333,12 +333,11 @@ class MediaServerI(Spotifice.MediaServer):
 
 
 def main(ic):
-    base_dir = Path(__file__).parent
-    users_file = base_dir / "users.json"
 
     properties = ic.getProperties()
     media_dir = properties.getPropertyWithDefault("MediaServer.Content", "media")
     playlists_dir = properties.getPropertyWithDefault("MediaServer.Playlists", "playlists")
+    users_file = properties.getPropertyWithDefault("MediaServer.Users", "users.json")
 
     servant = MediaServerI(Path(media_dir), Path(playlists_dir), Path(users_file))
     adapter = ic.createObjectAdapter("MediaServerAdapter")

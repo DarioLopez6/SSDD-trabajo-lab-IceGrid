@@ -1,11 +1,11 @@
-# Configuration file (12/14/25 20:44:35.183)
+# Configuration file (12/15/25 19:11:47.120)
 
 # Server configuration
 Ice.Admin.ServerId=Spotifice.IcePatch2
 Ice.Admin.Endpoints=tcp -h localhost
 Ice.ProgramName=Spotifice.IcePatch2
 # Object adapter IcePatch2
-IcePatch2.Endpoints=tcp -h 0.0.0.0
+IcePatch2.Endpoints=tcp -h 0.0.0.0 -p 10002
 IcePatch2.AdapterId=Spotifice.IcePatch2.IcePatch2
 # Server descriptor properties
 IcePatch2.InstanceName=Spotifice.IcePatch2
