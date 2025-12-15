@@ -70,7 +70,6 @@ Notas importantes
 - El Makefile organiza todo en **una sola sesión tmux**, evitando múltiples terminales dispersas.  
 - Los nodos están configurados en modo **always**, asegurando que se inicien automáticamente cuando IceGrid detecta la aplicación.  
 - Cada máquina debe conocer la IP de las demás y ajustar `control.config` y Makefile si cambia la red.  
-- Los puertos de IcePatch2 son dinámicos; si se desea una conexión directa fija, deben ajustarse manualmente en el Makefile.  
 
 Configuración avanzada
 ---------------------
