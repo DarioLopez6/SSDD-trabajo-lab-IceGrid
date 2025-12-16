@@ -1,6 +1,6 @@
 SESSION_NAME=spotifice
 RUN_SCRIPT=./run.sh
-SERVER_IP=192.168.1.201
+SERVER_IP=10.67.125.41
 SERVER_PORT=10002
 
 .PHONY: nodes gui stop
@@ -13,7 +13,7 @@ nodes-Server:
 # Inicia los nodos del cliente
 nodes-Client:
 	@echo "Sincronizando con IcePatch2 Server..."
-	@icepatch2client --IcePatch2.Proxy=IcePatch2:tcp -h $(SERVER_IP) -p $(SERVER_PORT) --sync
+	@icepatch2client --IcePatch2Client.Proxy="Spotifice.IcePatch2/server:tcp -h $(SERVER_IP) -p $(SERVER_PORT)" .
 	@echo "Iniciando nodos del cliente en tmux..."
 	@bash $(RUN_SCRIPT) nodes
 
